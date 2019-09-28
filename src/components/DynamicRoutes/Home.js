@@ -13,16 +13,18 @@ const Home = () => {
     })
     return () => unsubscribe()
   }, [])
-  return (
+  return posts.length ? (
     <div>
-      <h1>Home Page!!</h1>
+      <h1>Posts from firestore</h1>
       {posts.map(post => (
         <div key={post.id}>
-          <h2>{post.title}</h2>
+          <h3>{post.title}</h3>
           <p>{post.body}</p>
         </div>
       ))}
     </div>
+  ) : (
+    <h3>Lading..</h3>
   )
 }
 
