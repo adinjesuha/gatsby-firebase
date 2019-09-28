@@ -1,5 +1,5 @@
 import React, { useState } from "react"
-import { navigate } from "gatsby"
+import { Link, navigate } from "gatsby"
 import firebase from "../../services/firebase"
 
 const Login = () => {
@@ -42,6 +42,9 @@ const Login = () => {
         </div>
         <button>Log in</button>
       </form>
+      <p>
+        Don't have an account ? <Link to="/">Register</Link>
+      </p>
     </>
   )
 }

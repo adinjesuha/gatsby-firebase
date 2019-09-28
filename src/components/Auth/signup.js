@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { Link } from "gatsby"
 import firebase from "../../services/firebase"
 
 const INITIAL_USER = {
@@ -46,6 +47,9 @@ const Signup = () => {
         </div>
         <button>Sign Up</button>
       </form>
+      <p>
+        Or <Link to="/app/login">Login</Link>
+      </p>
     </>
   )
 }
