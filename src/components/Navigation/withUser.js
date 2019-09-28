@@ -1,4 +1,5 @@
 import React from "react"
+import { Link } from "gatsby"
 import firebase from "../../services/firebase"
 
 const WithUser = () => {
@@ -8,8 +9,12 @@ const WithUser = () => {
   return (
     <nav>
       <ul>
-        <li>Home</li>
-        <li>Profile</li>
+        <li>
+          <Link to="/app/home">Home</Link>
+        </li>
+        <li>
+          <Link to="/app/profile">Profile</Link>
+        </li>
         <li>
           <button onClick={handleSignOut}>Sign Out</button>
         </li>

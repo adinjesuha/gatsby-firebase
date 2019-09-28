@@ -1,4 +1,4 @@
-import React, { useState, useContext } from "react"
+import React, { useState } from "react"
 import firebase from "../../services/firebase"
 
 const INITIAL_USER = {
@@ -44,7 +44,7 @@ const Signup = () => {
           <label>Password</label>
           <input type="password" name="password" onChange={handleChange} />
         </div>
-        <button>Add Time Entry</button>
+        <button>Sign Up</button>
       </form>
     </>
   )
