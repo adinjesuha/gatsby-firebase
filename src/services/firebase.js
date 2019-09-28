@@ -1,6 +1,6 @@
-import firebase from "firebase"
-import "firebase/firestore"
+import firebase from "firebase/app"
 import "firebase/auth"
+import "firebase/firestore"
 
 const config = {
   apiKey: process.env.GATSBY_FIREBASE_APIKEY,
