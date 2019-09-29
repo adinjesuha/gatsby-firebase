@@ -13,6 +13,9 @@ const WithUser = () => {
           <Link to="/app/home">Home</Link>
         </li>
         <li>
+          <Link to="/app/create-post">Add Post</Link>
+        </li>
+        <li>
           <Link to="/app/profile">Profile</Link>
         </li>
         <li>

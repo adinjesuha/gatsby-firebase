@@ -6,6 +6,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { useUser } from "../store/"
 import Home from "../components/DynamicRoutes/Home"
+import AddPost from "../components/DynamicRoutes/AddPost"
 import Profile from "../components/DynamicRoutes/Profile"
 import LogIn from "../components/Auth/login"
 
@@ -26,6 +27,7 @@ const App = () => {
       <Router>
         <LogIn path="/app/login" />
         <PrivateRoute user={user} path="/app/home" component={Home} />
+        <PrivateRoute user={user} path="/app/create-post" component={AddPost} />
         <PrivateRoute user={user} path="/app/profile" component={Profile} />
       </Router>
     </Layout>
